@@ -6,24 +6,25 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background: #007BFF;
+  background: #004466;
   color: white;
+  padding: 20px;
 }
 
 header .logo {
-  font-weight: 700;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 nav ul {
@@ -38,94 +39,61 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  color: #00ccff;
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px;
-  background-color: #e9ecef;
+  padding: 50px 20px;
+  background: #00ccff;
+  color: white;
 }
 
-h1, h2 {
-  margin-bottom: 10px;
+.hero h1 {
+  font-size: 2.5em;
 }
 
+.hero p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #004466;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #002233;
+}
+
+/* Sections */
 section {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.project {
-  background-color: white;
-  padding: 10px;
+.service {
   margin: 20px auto;
+  padding: 10px;
+  background: white;
   border: 1px solid #ddd;
   border-radius: 5px;
-  max-width: 400px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
 }
 
+/* Footer */
 footer {
-  background: #007BFF;
-  color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 20px;
-}
-
-/* Mobile and Tablet Responsiveness */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    padding: 15px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .hero {
-    padding: 30px;
-  }
-
-  h1 {
-    font-size: 1.8em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  .project {
-    margin: 10px auto;
-    padding: 15px;
-    max-width: 100%;
-  }
-
-  footer {
-    padding: 5px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  nav ul {
-    gap: 5px;
-  }
-
-  p {
-    font-size: 0.9em;
-  }
-
-  button {
-    padding: 8px 12px;
-    font-size: 0.8em;
-  }
+  background: #004466;
+  color: white;
 }
